@@ -4,7 +4,6 @@ public class AddingMachine {
 
 	private int total;
 	private String op = "0"; //Sets the string op to just "0"
-	static AddingMachine myCalculator = new AddingMachine(); //Creates an object myCalculator that can be used for testing
 	
 	public AddingMachine () {
 		total = 0;  // not needed - included for clarity
@@ -31,17 +30,4 @@ public class AddingMachine {
 	public void clear() {
 		total = 0; //Sets the total to zero.
 	}
-
-
-	public static void main(String args[]) {
-		myCalculator.add(3);
-		myCalculator.add(7);
-		myCalculator.subtract(6);
-		System.out.println(myCalculator.toString());
-		System.out.println(myCalculator.getTotal());
-		myCalculator.clear();
-		System.out.println(myCalculator.getTotal());
-		// This main method is for testing the program
-	}
-
 }
